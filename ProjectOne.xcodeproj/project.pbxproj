@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F409CDDB263E481E0070EEC2 /* MyData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F409CDAB263E3B160070EEC2 /* MyData.xcdatamodeld */; };
+		F4184309262F308800470EA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4184308262F308800470EA4 /* AppDelegate.swift */; };
+		F418430B262F308800470EA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418430A262F308800470EA4 /* SceneDelegate.swift */; };
+		F418430D262F308800470EA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418430C262F308800470EA4 /* ViewController.swift */; };
+		F4184310262F308800470EA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F418430E262F308800470EA4 /* Main.storyboard */; };
+		F4184315262F309D00470EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4184314262F309D00470EA4 /* Assets.xcassets */; };
+		F4184318262F309D00470EA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4184316262F309D00470EA4 /* LaunchScreen.storyboard */; };
+		F45001B82635FF79009FA744 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45001B72635FF79009FA744 /* ForgotPasswordViewController.swift */; };
+		F45001BB26361687009FA744 /* ResortPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45001BA26361687009FA744 /* ResortPickerViewController.swift */; };
+		F4642CAC263B1396004E384C /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642C9C263B1395004E384C /* CosmosTouchTarget.swift */; };
+		F4642CAD263B1396004E384C /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642C9D263B1395004E384C /* CosmosView.swift */; };
+		F4642CAE263B1396004E384C /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642C9E263B1395004E384C /* CosmosSize.swift */; };
+		F4642CAF263B1396004E384C /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642C9F263B1395004E384C /* CosmosRating.swift */; };
+		F4642CB0263B1396004E384C /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA0263B1395004E384C /* CosmosLayers.swift */; };
+		F4642CB1263B1396004E384C /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA2263B1395004E384C /* CosmosDefaultSettings.swift */; };
+		F4642CB2263B1396004E384C /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA3263B1395004E384C /* CosmosLayerHelper.swift */; };
+		F4642CB3263B1396004E384C /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA4263B1395004E384C /* CosmosText.swift */; };
+		F4642CB4263B1396004E384C /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA5263B1395004E384C /* CosmosLocalizedRating.swift */; };
+		F4642CB5263B1396004E384C /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA6263B1395004E384C /* CosmosSettings.swift */; };
+		F4642CB6263B1396004E384C /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA7263B1395004E384C /* RightToLeft.swift */; };
+		F4642CB7263B1396004E384C /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA8263B1395004E384C /* CosmosTouch.swift */; };
+		F4642CB8263B1396004E384C /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CA9263B1395004E384C /* StarLayer.swift */; };
+		F4642CB9263B1396004E384C /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CAA263B1396004E384C /* StarFillMode.swift */; };
+		F4642CBA263B1396004E384C /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4642CAB263B1396004E384C /* CosmosAccessibility.swift */; };
+		F4651861263A0B68005EDE6B /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = F4651860263A0B68005EDE6B /* Cosmos */; };
+		F469FE3B26350B82000893DB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469FE3A26350B82000893DB /* WelcomeViewController.swift */; };
+		F469FE3E263513A4000893DB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469FE3D263513A4000893DB /* RegisterViewController.swift */; };
+		F469FE4626351486000893DB /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F469FE4526351486000893DB /* DBHelper.swift */; };
+		F47AF1152637528A00E859E4 /* cellViewData.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47AF1142637528A00E859E4 /* cellViewData.plist */; };
+		F47AF1182637533C00E859E4 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF1172637533C00E859E4 /* DataTableViewCell.swift */; };
+		F47AF11B263759F200E859E4 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF11A263759F200E859E4 /* QuestionsViewController.swift */; };
+		F47AF120263765C300E859E4 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF11F263765C300E859E4 /* FoodViewController.swift */; };
+		F47AF123263765F800E859E4 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF122263765F800E859E4 /* FoodTableViewCell.swift */; };
+		F47AF1262637687900E859E4 /* GymTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF1252637687900E859E4 /* GymTableViewCell.swift */; };
+		F47AF1292637688900E859E4 /* SpaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF1282637688900E859E4 /* SpaTableViewCell.swift */; };
+		F47AF12C2637689F00E859E4 /* OverallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF12B2637689F00E859E4 /* OverallTableViewCell.swift */; };
+		F47AF1332637696100E859E4 /* GymViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF1322637696100E859E4 /* GymViewController.swift */; };
+		F47AF1362637698100E859E4 /* SpaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF1352637698100E859E4 /* SpaViewController.swift */; };
+		F47AF139263769A400E859E4 /* OverallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47AF138263769A400E859E4 /* OverallViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F409CDAC263E3B160070EEC2 /* MyData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyData.xcdatamodel; sourceTree = "<group>"; };
+		F4184305262F308800470EA4 /* ProjectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4184308262F308800470EA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F418430A262F308800470EA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F418430C262F308800470EA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F418430F262F308800470EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4184314262F309D00470EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4184317262F309D00470EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4184319262F309D00470EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45001B72635FF79009FA744 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		F45001BA26361687009FA744 /* ResortPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortPickerViewController.swift; sourceTree = "<group>"; };
+		F4642C9C263B1395004E384C /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = "../../../Downloads/Rating File/CosmosTouchTarget.swift"; sourceTree = "<group>"; };
+		F4642C9D263B1395004E384C /* CosmosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = "../../../Downloads/Rating File/CosmosView.swift"; sourceTree = "<group>"; };
+		F4642C9E263B1395004E384C /* CosmosSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = "../../../Downloads/Rating File/CosmosSize.swift"; sourceTree = "<group>"; };
+		F4642C9F263B1395004E384C /* CosmosRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = "../../../Downloads/Rating File/CosmosRating.swift"; sourceTree = "<group>"; };
+		F4642CA0263B1395004E384C /* CosmosLayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = "../../../Downloads/Rating File/CosmosLayers.swift"; sourceTree = "<group>"; };
+		F4642CA1263B1395004E384C /* Cosmos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cosmos.h; path = "../../../Downloads/Rating File/Cosmos.h"; sourceTree = "<group>"; };
+		F4642CA2263B1395004E384C /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = "../../../Downloads/Rating File/CosmosDefaultSettings.swift"; sourceTree = "<group>"; };
+		F4642CA3263B1395004E384C /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = "../../../Downloads/Rating File/CosmosLayerHelper.swift"; sourceTree = "<group>"; };
+		F4642CA4263B1395004E384C /* CosmosText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = "../../../Downloads/Rating File/CosmosText.swift"; sourceTree = "<group>"; };
+		F4642CA5263B1395004E384C /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = "../../../Downloads/Rating File/CosmosLocalizedRating.swift"; sourceTree = "<group>"; };
+		F4642CA6263B1395004E384C /* CosmosSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = "../../../Downloads/Rating File/CosmosSettings.swift"; sourceTree = "<group>"; };
+		F4642CA7263B1395004E384C /* RightToLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = "../../../Downloads/Rating File/RightToLeft.swift"; sourceTree = "<group>"; };
+		F4642CA8263B1395004E384C /* CosmosTouch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = "../../../Downloads/Rating File/CosmosTouch.swift"; sourceTree = "<group>"; };
+		F4642CA9263B1395004E384C /* StarLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = "../../../Downloads/Rating File/StarLayer.swift"; sourceTree = "<group>"; };
+		F4642CAA263B1396004E384C /* StarFillMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = "../../../Downloads/Rating File/StarFillMode.swift"; sourceTree = "<group>"; };
+		F4642CAB263B1396004E384C /* CosmosAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = "../../../Downloads/Rating File/CosmosAccessibility.swift"; sourceTree = "<group>"; };
+		F469FE3A26350B82000893DB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F469FE3D263513A4000893DB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F469FE4526351486000893DB /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		F47AF1142637528A00E859E4 /* cellViewData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = cellViewData.plist; sourceTree = "<group>"; };
+		F47AF1172637533C00E859E4 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		F47AF11A263759F200E859E4 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		F47AF11F263765C300E859E4 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		F47AF122263765F800E859E4 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		F47AF1252637687900E859E4 /* GymTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTableViewCell.swift; sourceTree = "<group>"; };
+		F47AF1282637688900E859E4 /* SpaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaTableViewCell.swift; sourceTree = "<group>"; };
+		F47AF12B2637689F00E859E4 /* OverallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallTableViewCell.swift; sourceTree = "<group>"; };
+		F47AF1322637696100E859E4 /* GymViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymViewController.swift; sourceTree = "<group>"; };
+		F47AF1352637698100E859E4 /* SpaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaViewController.swift; sourceTree = "<group>"; };
+		F47AF138263769A400E859E4 /* OverallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4184302262F308800470EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4651861263A0B68005EDE6B /* Cosmos in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F41842FC262F308800470EA4 = {
+			isa = PBXGroup;
+			children = (
+				F4184307262F308800470EA4 /* ProjectOne */,
+				F4184306262F308800470EA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4184306262F308800470EA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4184305262F308800470EA4 /* ProjectOne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4184307262F308800470EA4 /* ProjectOne */ = {
+			isa = PBXGroup;
+			children = (
+				F4642C9B263B136C004E384C /* Cosmos */,
+				F4184308262F308800470EA4 /* AppDelegate.swift */,
+				F418430A262F308800470EA4 /* SceneDelegate.swift */,
+				F418430C262F308800470EA4 /* ViewController.swift */,
+				F418430E262F308800470EA4 /* Main.storyboard */,
+				F4184314262F309D00470EA4 /* Assets.xcassets */,
+				F4184316262F309D00470EA4 /* LaunchScreen.storyboard */,
+				F4184319262F309D00470EA4 /* Info.plist */,
+				F469FE3A26350B82000893DB /* WelcomeViewController.swift */,
+				F469FE3D263513A4000893DB /* RegisterViewController.swift */,
+				F469FE4526351486000893DB /* DBHelper.swift */,
+				F45001B72635FF79009FA744 /* ForgotPasswordViewController.swift */,
+				F45001BA26361687009FA744 /* ResortPickerViewController.swift */,
+				F47AF1142637528A00E859E4 /* cellViewData.plist */,
+				F47AF1172637533C00E859E4 /* DataTableViewCell.swift */,
+				F47AF11A263759F200E859E4 /* QuestionsViewController.swift */,
+				F47AF11F263765C300E859E4 /* FoodViewController.swift */,
+				F47AF122263765F800E859E4 /* FoodTableViewCell.swift */,
+				F47AF1252637687900E859E4 /* GymTableViewCell.swift */,
+				F47AF1282637688900E859E4 /* SpaTableViewCell.swift */,
+				F47AF12B2637689F00E859E4 /* OverallTableViewCell.swift */,
+				F47AF1322637696100E859E4 /* GymViewController.swift */,
+				F47AF1352637698100E859E4 /* SpaViewController.swift */,
+				F47AF138263769A400E859E4 /* OverallViewController.swift */,
+				F409CDAB263E3B160070EEC2 /* MyData.xcdatamodeld */,
+			);
+			path = ProjectOne;
+			sourceTree = "<group>";
+		};
+		F4642C9B263B136C004E384C /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				F4642CA1263B1395004E384C /* Cosmos.h */,
+				F4642CAB263B1396004E384C /* CosmosAccessibility.swift */,
+				F4642CA2263B1395004E384C /* CosmosDefaultSettings.swift */,
+				F4642CA3263B1395004E384C /* CosmosLayerHelper.swift */,
+				F4642CA0263B1395004E384C /* CosmosLayers.swift */,
+				F4642CA5263B1395004E384C /* CosmosLocalizedRating.swift */,
+				F4642C9F263B1395004E384C /* CosmosRating.swift */,
+				F4642CA6263B1395004E384C /* CosmosSettings.swift */,
+				F4642C9E263B1395004E384C /* CosmosSize.swift */,
+				F4642CA4263B1395004E384C /* CosmosText.swift */,
+				F4642CA8263B1395004E384C /* CosmosTouch.swift */,
+				F4642C9C263B1395004E384C /* CosmosTouchTarget.swift */,
+				F4642C9D263B1395004E384C /* CosmosView.swift */,
+				F4642CA7263B1395004E384C /* RightToLeft.swift */,
+				F4642CAA263B1396004E384C /* StarFillMode.swift */,
+				F4642CA9263B1395004E384C /* StarLayer.swift */,
+			);
+			name = Cosmos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4184304262F308800470EA4 /* ProjectOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F418431C262F309D00470EA4 /* Build configuration list for PBXNativeTarget "ProjectOne" */;
+			buildPhases = (
+				F4184301262F308800470EA4 /* Sources */,
+				F4184302262F308800470EA4 /* Frameworks */,
+				F4184303262F308800470EA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProjectOne;
+			packageProductDependencies = (
+				F4651860263A0B68005EDE6B /* Cosmos */,
+			);
+			productName = ProjectOne;
+			productReference = F4184305262F308800470EA4 /* ProjectOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F41842FD262F308800470EA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F4184304262F308800470EA4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = F4184300262F308800470EA4 /* Build configuration list for PBXProject "ProjectOne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F41842FC262F308800470EA4;
+			packageReferences = (
+				F465185F263A0B67005EDE6B /* XCRemoteSwiftPackageReference "Cosmos" */,
+			);
+			productRefGroup = F4184306262F308800470EA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4184304262F308800470EA4 /* ProjectOne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4184303262F308800470EA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4184318262F309D00470EA4 /* LaunchScreen.storyboard in Resources */,
+				F47AF1152637528A00E859E4 /* cellViewData.plist in Resources */,
+				F4184315262F309D00470EA4 /* Assets.xcassets in Resources */,
+				F4184310262F308800470EA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4184301262F308800470EA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47AF11B263759F200E859E4 /* QuestionsViewController.swift in Sources */,
+				F4642CB8263B1396004E384C /* StarLayer.swift in Sources */,
+				F47AF1292637688900E859E4 /* SpaTableViewCell.swift in Sources */,
+				F4642CAF263B1396004E384C /* CosmosRating.swift in Sources */,
+				F4642CBA263B1396004E384C /* CosmosAccessibility.swift in Sources */,
+				F4642CAE263B1396004E384C /* CosmosSize.swift in Sources */,
+				F45001B82635FF79009FA744 /* ForgotPasswordViewController.swift in Sources */,
+				F47AF1332637696100E859E4 /* GymViewController.swift in Sources */,
+				F4642CAC263B1396004E384C /* CosmosTouchTarget.swift in Sources */,
+				F47AF139263769A400E859E4 /* OverallViewController.swift in Sources */,
+				F4642CB0263B1396004E384C /* CosmosLayers.swift in Sources */,
+				F4642CB5263B1396004E384C /* CosmosSettings.swift in Sources */,
+				F47AF1262637687900E859E4 /* GymTableViewCell.swift in Sources */,
+				F47AF123263765F800E859E4 /* FoodTableViewCell.swift in Sources */,
+				F4642CB3263B1396004E384C /* CosmosText.swift in Sources */,
+				F4642CB6263B1396004E384C /* RightToLeft.swift in Sources */,
+				F469FE3B26350B82000893DB /* WelcomeViewController.swift in Sources */,
+				F4642CAD263B1396004E384C /* CosmosView.swift in Sources */,
+				F418430D262F308800470EA4 /* ViewController.swift in Sources */,
+				F4642CB1263B1396004E384C /* CosmosDefaultSettings.swift in Sources */,
+				F45001BB26361687009FA744 /* ResortPickerViewController.swift in Sources */,
+				F469FE4626351486000893DB /* DBHelper.swift in Sources */,
+				F469FE3E263513A4000893DB /* RegisterViewController.swift in Sources */,
+				F4642CB2263B1396004E384C /* CosmosLayerHelper.swift in Sources */,
+				F47AF1182637533C00E859E4 /* DataTableViewCell.swift in Sources */,
+				F4642CB9263B1396004E384C /* StarFillMode.swift in Sources */,
+				F47AF1362637698100E859E4 /* SpaViewController.swift in Sources */,
+				F409CDDB263E481E0070EEC2 /* MyData.xcdatamodeld in Sources */,
+				F4184309262F308800470EA4 /* AppDelegate.swift in Sources */,
+				F47AF12C2637689F00E859E4 /* OverallTableViewCell.swift in Sources */,
+				F47AF120263765C300E859E4 /* FoodViewController.swift in Sources */,
+				F4642CB7263B1396004E384C /* CosmosTouch.swift in Sources */,
+				F4642CB4263B1396004E384C /* CosmosLocalizedRating.swift in Sources */,
+				F418430B262F308800470EA4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F418430E262F308800470EA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F418430F262F308800470EA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4184316262F309D00470EA4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4184317262F309D00470EA4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F418431A262F309D00470EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F418431B262F309D00470EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F418431D262F309D00470EA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yazid.ProjectOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F418431E262F309D00470EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProjectOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yazid.ProjectOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4184300262F308800470EA4 /* Build configuration list for PBXProject "ProjectOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418431A262F309D00470EA4 /* Debug */,
+				F418431B262F309D00470EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F418431C262F309D00470EA4 /* Build configuration list for PBXNativeTarget "ProjectOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F418431D262F309D00470EA4 /* Debug */,
+				F418431E262F309D00470EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F465185F263A0B67005EDE6B /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4651860263A0B68005EDE6B /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F465185F263A0B67005EDE6B /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F409CDAB263E3B160070EEC2 /* MyData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F409CDAC263E3B160070EEC2 /* MyData.xcdatamodel */,
+			);
+			currentVersion = F409CDAC263E3B160070EEC2 /* MyData.xcdatamodel */;
+			path = MyData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F41842FD262F308800470EA4 /* Project object */;
+}
