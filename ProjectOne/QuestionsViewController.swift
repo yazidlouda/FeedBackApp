@@ -11,9 +11,8 @@ class QuestionsViewController: UIViewController,UITableViewDelegate, UITableView
     
     
     @IBOutlet weak var image: UIImageView!
-     private static var rowsCount = 5
-     private var ratingStorage = [Double](repeating: 0, count: rowsCount)
-
+     
+    static var totalRating = 0.0
     
     
     var Questions = ["Question1", "Question2", "Question3", "Question4", "Question5"]
@@ -26,28 +25,30 @@ class QuestionsViewController: UIViewController,UITableViewDelegate, UITableView
             return Questions.count
       
     }
+    //Size of Cell
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        100.0
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     // call core data
         let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         let rat = NSEntityDescription.insertNewObject(forEntityName: "User", into: context!) as! User
         
-        let rating = ratingStorage[indexPath.row]
+       
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DataTableViewCell
         cell.update(rat.rating)
         
         cell.label.text = Questions[indexPath.row]
-        cell.ratingBar.settings.fillMode = .precise
-        cell.ratingBar.didFinishTouchingCosmos = { [weak self] rating in
-            self?.ratingStorage[indexPath.row] = rating
-            rat.rating = self?.ratingStorage.reduce(0, +) ?? 0
+        cell.ratingBar.settings.fillMode = .half
+        cell.ratingBar.didFinishTouchingCosmos = {  rating in
+
+            QuestionsViewController.totalRating += Double(rating)
+
+            DBHelper.inst.addRateData(rating: QuestionsViewController.totalRating ,userName:  ViewController.userId!)
+
             
-            
-            //let dic = [rat.rating : self?.ratingStorage.reduce(0, +) ?? 0]
-            DBHelper.inst.addRateData(rating: self?.ratingStorage.reduce(0, +) ?? 0)
-            
-            
-           
+           print(rating)
                 
                 
            
@@ -57,32 +58,17 @@ class QuestionsViewController: UIViewController,UITableViewDelegate, UITableView
     }
     
    
-    @IBAction func getData(_ sender: Any) {
-        
-        let data = DBHelper.inst.getData()
-        for st in data {
-            print ("Average rate for room is",st.rating)
-            
-            if st.rating < 3{
-                image.image = UIImage(named: "sad")
-            }
-            if st.rating > 3{
-                image.image = UIImage(named: "smile")
-            }
-        
-        }
-    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for i in 0..<QuestionsViewController.rowsCount {
-              ratingStorage[i] = Double(i) / 99 * 5
-            }
-        let data = DBHelper.inst.getData()
-        for st in data {
-            st.rating = 4
-        }
+//        for i in 0..<QuestionsViewController.rowsCount {
+//              ratingStorage[i] = Double(i) / 99 * 5
+//            }
+//        let data = DBHelper.inst.getData()
+//        for st in data {
+//            st.rating = 4
+//        }
     }
     
    

@@ -7,7 +7,7 @@
 
 import UIKit
 import CoreData
-import UIKit
+
 class DataTableViewCell: UITableViewCell {
     
     let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
@@ -19,8 +19,8 @@ class DataTableViewCell: UITableViewCell {
         // Initialization code
         let data = DBHelper.inst.getData()
         for st in data {
-           // st.rating = ratingBar.rating
-            st.rating = 0
+            st.rating = ratingBar.rating
+            
     }
     }
     override func setSelected(_ selected: Bool, animated: Bool) {

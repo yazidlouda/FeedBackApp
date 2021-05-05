@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7c-vc-j9W">
-                                <rect key="frame" x="20" y="44" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNO-AN-Yiz">
                                 <rect key="frame" x="20" y="129" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -34,35 +27,59 @@
                                 <rect key="frame" x="139" y="213" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
-                                <state key="normal" title="Send password">
+                                <state key="normal" title="Send a code">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="sendPassword:" destination="xRX-Lt-6Dc" eventType="touchUpInside" id="KHU-aU-cRE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErJ-ma-RyP">
-                                <rect key="frame" x="20" y="489" width="374" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCI-sO-Ky4">
-                                <rect key="frame" x="139" y="601" width="136" height="30"/>
+                                <rect key="frame" x="139" y="389" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
-                                <state key="normal" title="Continue">
+                                <state key="normal" title="OK">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="continueButton:" destination="xRX-Lt-6Dc" eventType="touchUpInside" id="wuV-8g-xl1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW5-no-7gx">
-                                <rect key="frame" x="20" y="444" width="374" height="37"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER CODE" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ivF-uv-j4U">
+                                <rect key="frame" x="20" y="301" width="374" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter new password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gm2-Z2-Ssw">
+                                <rect key="frame" x="20" y="258" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm new passwod" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Geu-1o-KIO">
+                                <rect key="frame" x="20" y="346" width="374" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HA4-yq-hWb">
+                                <rect key="frame" x="139" y="445" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="print:" destination="k8e-FF-epo" eventType="touchUpInside" id="hXg-1y-1pT"/>
+                                    <action selector="updatePassword:" destination="xRX-Lt-6Dc" eventType="touchUpInside" id="qsN-6c-LGL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmh-IW-WBw">
+                                <rect key="frame" x="20" y="100" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -72,16 +89,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="8cj-DI-VZd"/>
                     <connections>
+                        <outlet property="confirmNewPassword" destination="Geu-1o-KIO" id="Fps-lH-0eQ"/>
                         <outlet property="email" destination="eNO-AN-Yiz" id="94m-lu-jZa"/>
-                        <outlet property="label" destination="J7c-vc-j9W" id="Cnp-n5-L80"/>
-                        <outlet property="label3" destination="YW5-no-7gx" id="WYN-DC-bsj"/>
-                        <outlet property="labelShow" destination="ErJ-ma-RyP" id="Wua-v9-wXw"/>
+                        <outlet property="enterCode" destination="ivF-uv-j4U" id="Ijf-j1-tjz"/>
+                        <outlet property="enterNewPassword" destination="Gm2-Z2-Ssw" id="HDB-Ah-Hkg"/>
+                        <outlet property="label" destination="Gmh-IW-WBw" id="co5-t5-0Y0"/>
                         <outlet property="ok" destination="xCI-sO-Ky4" id="xFH-PZ-qnM"/>
+                        <outlet property="sendPassword" destination="Sra-Df-baF" id="XZ7-yt-pce"/>
+                        <outlet property="update" destination="HA4-yq-hWb" id="XJq-ln-rVn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpj-lz-KW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-301" y="816"/>
+            <point key="canvasLocation" x="-301.44927536231887" y="815.625"/>
         </scene>
         <!--Room-->
         <scene sceneID="mBd-xv-Fmv">
@@ -96,7 +116,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-34-j7B">
-                                <rect key="frame" x="0.0" y="334" width="414" height="231"/>
+                                <rect key="frame" x="0.0" y="133" width="414" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -115,7 +135,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WG1-Hy-0oG" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
-                                                    <rect key="frame" x="120" y="11" width="180" height="51"/>
+                                                    <rect key="frame" x="20" y="49" width="274" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <userDefinedRuntimeAttributes>
@@ -144,11 +164,11 @@
                                 </connections>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oqf-wd-UDp">
-                                <rect key="frame" x="141" y="573" width="132" height="128"/>
+                                <rect key="frame" x="141" y="670" width="132" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I53-Zq-K5G">
-                                <rect key="frame" x="176" y="222" width="62" height="30"/>
+                                <rect key="frame" x="176" y="82" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="get rates">
@@ -163,10 +183,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Room" id="mUv-kx-WZW">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="DuA-vx-rMo"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wsh-4F-AuK">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="DuA-vx-rMo">
                             <connections>
-                                <segue destination="wQg-Dk-lS3" kind="show" id="1Sc-s2-R0H"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="MWb-qW-4wT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next Survey" id="Wsh-4F-AuK">
+                            <connections>
+                                <segue destination="wQg-Dk-lS3" kind="show" id="yNF-Ad-pit"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -192,7 +216,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zZw-kx-Mab">
-                                <rect key="frame" x="0.0" y="333" width="414" height="223"/>
+                                <rect key="frame" x="0.0" y="126" width="414" height="503"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -210,10 +234,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pAU-kk-0wk" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="40" width="293" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="sVu-to-lQv" id="gyg-gs-yAB"/>
+                                            <outlet property="overallRatingBar" destination="pAU-kk-0wk" id="z9T-KX-0Jt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -222,6 +263,17 @@
                                     <outlet property="delegate" destination="o2J-pm-Ok2" id="FR0-WY-4N1"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAC-f0-EwK">
+                                <rect key="frame" x="172" y="656" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k8e-FF-epo" kind="show" id="ctZ-yH-dJK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3qh-qo-KGE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -245,7 +297,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OzQ-IG-m5W">
-                                <rect key="frame" x="0.0" y="332" width="414" height="229"/>
+                                <rect key="frame" x="0.0" y="126" width="414" height="500"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -263,10 +315,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3DQ-cp-Y1t" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="40" width="293" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="jJl-VG-6Js" id="2j8-vU-7un"/>
+                                            <outlet property="spaRatingBar" destination="3DQ-cp-Y1t" id="Kb1-sb-wNK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -280,7 +349,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="SPA" id="5yQ-Y1-KOy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="n1v-jC-X6u">
+                        <barButtonItem key="rightBarButtonItem" title="Next Survey" id="n1v-jC-X6u">
                             <connections>
                                 <segue destination="o2J-pm-Ok2" kind="show" id="CNZ-cT-WMe"/>
                             </connections>
@@ -304,7 +373,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="coV-2l-o4h">
-                                <rect key="frame" x="0.0" y="337" width="414" height="223"/>
+                                <rect key="frame" x="0.0" y="129" width="414" height="498"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -322,9 +391,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="67f-Tl-4Iu" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="40" width="275" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="gymRatingBar" destination="67f-Tl-4Iu" id="2kH-fj-e2Q"/>
                                             <outlet property="label" destination="QLQ-nh-vkD" id="6ji-Sq-BoR"/>
                                         </connections>
                                     </tableViewCell>
@@ -339,7 +425,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gym" id="gy1-ga-Fj5">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="poo-Aj-EZp">
+                        <barButtonItem key="rightBarButtonItem" title="Next Survey" id="poo-Aj-EZp">
                             <connections>
                                 <segue destination="kam-ep-IzD" kind="show" id="zHE-Hh-I9M"/>
                             </connections>
@@ -363,7 +449,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P2f-JE-GRL">
-                                <rect key="frame" x="0.0" y="334" width="414" height="230"/>
+                                <rect key="frame" x="0.0" y="130" width="414" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -382,13 +468,25 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hY3-JP-J9W" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
-                                                    <rect key="frame" x="113" y="11" width="281" height="50"/>
+                                                    <rect key="frame" x="20" y="39" width="281" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="35"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="foodRatingBar" destination="hY3-JP-J9W" id="Qc9-O9-aK3"/>
                                             <outlet property="label" destination="qd6-s3-yNN" id="EHt-oI-cPW"/>
                                         </connections>
                                     </tableViewCell>
@@ -403,7 +501,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Food" id="RSr-PZ-eFr">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rI8-Hj-bO0">
+                        <barButtonItem key="rightBarButtonItem" title="Next Survey" id="rI8-Hj-bO0">
                             <connections>
                                 <segue destination="qYf-hk-pav" kind="show" id="3Cy-m4-nQn"/>
                             </connections>
@@ -786,15 +884,182 @@
             </objects>
             <point key="canvasLocation" x="-2849.275362318841" y="124.55357142857142"/>
         </scene>
+        <!--Summary View Controller-->
+        <scene sceneID="M13-hg-2V9">
+            <objects>
+                <viewController id="k8e-FF-epo" customClass="SummaryViewController" customModule="ProjectOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YfY-oj-oaf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="david-vives-ELf8M_YWRTY-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="3J3-x0-lIs">
+                                <rect key="frame" x="0.0" y="56" width="414" height="703"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBR-cF-9Cv">
+                                <rect key="frame" x="107" y="53" width="240" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7e-Qr-RYk" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                <rect key="frame" x="107" y="127" width="287" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ID-9Q-uD9" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                <rect key="frame" x="107" y="200" width="287" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obo-hW-IyL" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                <rect key="frame" x="107" y="276" width="287" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZU-ls-Cew" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                <rect key="frame" x="107" y="357" width="287" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXh-BU-WbC" customClass="CosmosView" customModule="ProjectOne" customModuleProvider="target">
+                                <rect key="frame" x="107" y="442" width="287" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-Eo-uQ2">
+                                <rect key="frame" x="20" y="127" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFA-AL-9dS">
+                                <rect key="frame" x="20" y="200" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SPA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-43-Oxd">
+                                <rect key="frame" x="20" y="276" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gym" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFQ-Bi-lLy">
+                                <rect key="frame" x="20" y="357" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Overall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6w-M4-AEE">
+                                <rect key="frame" x="20" y="449" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-p5-3Br">
+                                <rect key="frame" x="175" y="545" width="103" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SeM-Cn-Ne8"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TaN-pJ-YC6">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="yXX-i4-uJc">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="5TA-Lt-8Uw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="foodRating" destination="2ID-9Q-uD9" id="T1o-ul-Yrj"/>
+                        <outlet property="gymRating" destination="SZU-ls-Cew" id="haR-KI-oBb"/>
+                        <outlet property="img" destination="yyv-p5-3Br" id="nki-ka-gnk"/>
+                        <outlet property="overallRating" destination="gXh-BU-WbC" id="Ohl-Gk-IAk"/>
+                        <outlet property="password" destination="Geu-1o-KIO" id="XBE-cx-C9V"/>
+                        <outlet property="roomRating" destination="n7e-Qr-RYk" id="feL-5y-aIV"/>
+                        <outlet property="spaRating" destination="obo-hW-IyL" id="56X-yB-g1h"/>
+                        <outlet property="username" destination="Gm2-Z2-Ssw" id="spv-7T-wAU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ie-FF-wCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105.7971014492755" y="991.74107142857133"/>
+        </scene>
     </scenes>
     <designables>
+        <designable name="2ID-9Q-uD9">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="3DQ-cp-Y1t">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="67f-Tl-4Iu">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="SZU-ls-Cew">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
         <designable name="WG1-Hy-0oG">
             <size key="intrinsicContentSize" width="195" height="35"/>
         </designable>
+        <designable name="gXh-BU-WbC">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
         <designable name="hY3-JP-J9W">
-            <size key="intrinsicContentSize" width="120" height="20"/>
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="n7e-Qr-RYk">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="obo-hW-IyL">
+            <size key="intrinsicContentSize" width="195" height="35"/>
+        </designable>
+        <designable name="pAU-kk-0wk">
+            <size key="intrinsicContentSize" width="195" height="35"/>
         </designable>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="MWb-qW-4wT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="david-vives-ELf8M_YWRTY-unsplash" width="3872" height="2592"/>
         <image name="facebook_icon_130940" width="512" height="512"/>

@@ -9,6 +9,7 @@ import UIKit
 
 class SpaTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var spaRatingBar: CosmosView!
     @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +21,7 @@ class SpaTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    func update(_ rating: Double) {
+        spaRatingBar.rating = rating
+     }
 }

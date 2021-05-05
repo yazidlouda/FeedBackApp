@@ -9,6 +9,7 @@ import UIKit
 
 class GymTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var gymRatingBar: CosmosView!
     @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +21,7 @@ class GymTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    func update(_ rating: Double) {
+        gymRatingBar.rating = rating
+     }
 }

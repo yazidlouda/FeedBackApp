@@ -9,6 +9,7 @@ import UIKit
 
 class FoodTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var foodRatingBar: CosmosView!
     @IBOutlet weak var label: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,5 +21,7 @@ class FoodTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    func update(_ rating: Double) {
+        foodRatingBar.rating = rating
+     }
 }

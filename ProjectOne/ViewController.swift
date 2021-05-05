@@ -18,28 +18,38 @@ class ViewController: UIViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var saveText: UILabel!
-    
+    static var userId : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-        if (sw.isOn){
-            saveText.text = "Save"
-            let data = DBHelper.inst.getData()
-            for st in data {
+        let data = DBHelper.inst.getData()
+        for st in data {
+
+            if (sw.isOn){
+            if(st.email != nil){
+                
+                saveText.text = "Save"
                 username.text = st.email
                 password.text = st.password
             }
-        }
-        else{
-            sw.isOn = false
-            saveText.text = "Do not Save"
+                else{
+                    print("there is no data")
+                
+//        }
+            
+                
+            }
+            
         
-    }
+    }else
+            {
+                saveText.text = "Do not Save"
+                
+            }
 
         
-    
+        }
 }
   //Show and hide password
     @IBAction func hidePassword(_ sender: UIButton) {
@@ -60,23 +70,27 @@ class ViewController: UIViewController {
     @IBAction func login(_ sender: Any)
     {
 
-        let data = DBHelper.inst.getData()
-        for st in data {
+        let data = DBHelper.inst.getOneData(email: username.text!)
+     //   for st in data {
+        if(DBHelper.checkData){
+            
         
         var userName = username.text!
         var pass = password.text!
         
-            if (userName != st.email  || pass != st.password)
+            if (userName != data.email  || pass != data.password)
         {
        
             errorMsg.text =  "incorrect Email or password try again!"
             errorMsg.textColor = UIColor.red
     }
         else{
+            ViewController.userId = data.email
             errorMsg.isHidden = true
                    if sw.isOn{
-                    username.text = st.email
-                    password.text = st.password
+                    username.text = data.email
+                    password.text = data.password
+                    print(data.email!)
                    }
                    else{
                        print("")
@@ -86,25 +100,13 @@ class ViewController: UIViewController {
             as! WelcomeViewController
             present(wel,animated: true, completion:nil)
            
-        }
+   //     }
         }
         
       
     }
     
-//    @IBAction func save(_ sender: Any) {
-//        if  sw.isOn{
-//            saveText.text = "Save"
-//
-//        ud.set(username.text, forKey : "username")
-//        ud.set(password.text, forKey: "password")
-//        ud.set(true,forKey: "state")
-//        print("Data saved")
-//        }
-//        else{
-//            ud.removeObject(forKey: "username")
-//            ud.removeObject(forKey: "password")
-//            saveText.text = "Do not Save"
-//        }
-//    }
+
+}
+
 }
