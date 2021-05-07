@@ -10,7 +10,7 @@ import CoreData
 class FoodViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     static var totalRating = 0.0
-    var Questions = ["Question1", "Question2", "Question3", "Question4", "Question5"]
+    var Questions = ["How would you rate our service?", "How would you rate our food?", "How would you rate our organisation?", "How comfortable were the tables and seats ", "How likely you recommend our food?"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -38,6 +38,8 @@ class FoodViewController: UIViewController,UITableViewDelegate, UITableViewDataS
             DBHelper.inst.addFoodRateData(rating: FoodViewController.totalRating ,userName:  ViewController.userId!)
             
         }
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         return cell
     }
     

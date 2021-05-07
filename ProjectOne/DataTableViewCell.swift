@@ -26,39 +26,14 @@ class DataTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-//        ratingBar.settings.fillMode = .precise
-//         ratingBar.didFinishTouchingCosmos = {
-//            rate in print(rate)
-//
-//
-            
-               
-            
-                
-          //  }
+
          }
     
     
     func update(_ rating: Double) {
        ratingBar.rating = rating
      }
-//    func addData (object : [String:Double] )
-//    {
-//        ratingBar.settings.fillMode = .precise
-//        ratingBar.didFinishTouchingCosmos = {
-//            rate in
-//            let rat = NSEntityDescription.insertNewObject(forEntityName: "User", into: self.context!) as! User
-//            rat.rating = object[1]
-//
-//        }
-//
-//
-//        do{
-//            try context?.save()
-//            print("data saved")
-//        }
-//        catch{
-//            print("data not saved")
-//        }
-//    }
+
+    
+ 
 }

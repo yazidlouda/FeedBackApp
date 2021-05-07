@@ -32,13 +32,13 @@ class DBHelper{
             print("data not saved")
         }
     }
-    func updateData(object : [String:String])
+    func updateData(object : [String:String], email:String)
     {
         
         var st = User()
         if (st.email != nil) {
             var fetchReq = NSFetchRequest<NSManagedObject>.init(entityName: "User")
-            fetchReq.predicate = NSPredicate(format : "name ==%@", st.email as! CVarArg)
+            fetchReq.predicate = NSPredicate(format : "email ==%@", email)
             do{
                 let stu = try context?.fetch(fetchReq)
                 if (stu?.count != 0){

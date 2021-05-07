@@ -7,16 +7,21 @@
 
 import UIKit
 import CoreData
+
 class QuestionsViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var image: UIImageView!
      
     static var totalRating = 0.0
     
     
-    var Questions = ["Question1", "Question2", "Question3", "Question4", "Question5"]
-   
+    var Questions = ["how was your room upon arrival?", "how did the houskeeping staff do during your stay?", "was your bed comfortable?", "How well-equiped was your room?", "How satisfied were you with your room?"]
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        animateTable()
+//    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -38,7 +43,7 @@ class QuestionsViewController: UIViewController,UITableViewDelegate, UITableView
        
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! DataTableViewCell
         cell.update(rat.rating)
-        
+       
         cell.label.text = Questions[indexPath.row]
         cell.ratingBar.settings.fillMode = .half
         cell.ratingBar.didFinishTouchingCosmos = {  rating in
@@ -53,7 +58,8 @@ class QuestionsViewController: UIViewController,UITableViewDelegate, UITableView
                 
            
               }
-     
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
             return cell
     }
     
@@ -62,16 +68,10 @@ class QuestionsViewController: UIViewController,UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        for i in 0..<QuestionsViewController.rowsCount {
-//              ratingStorage[i] = Double(i) / 99 * 5
-//            }
-//        let data = DBHelper.inst.getData()
-//        for st in data {
-//            st.rating = 4
-//        }
+
     }
     
-   
-    
 
+
+   
 }

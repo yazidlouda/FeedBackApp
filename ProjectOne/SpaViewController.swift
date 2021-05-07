@@ -10,7 +10,7 @@ import CoreData
 
 class SpaViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     static var totalRating = 0.0
-    var Questions = ["Question1", "Question2", "Question3", "Question4", "Question5"]
+    var Questions = ["How friendly were the staff members?", "How comfortable were you?", "how do you rate the cleanliness?", "how do you rate the equipments?", "likely are you to recommend us?"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -40,6 +40,8 @@ class SpaViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
             DBHelper.inst.addSpaRateData(rating: SpaViewController.totalRating ,userName:  ViewController.userId!)
            
               }
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         return cell
     }
     

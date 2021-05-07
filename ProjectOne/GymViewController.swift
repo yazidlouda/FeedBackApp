@@ -9,7 +9,7 @@ import UIKit
 import CoreData
 class GymViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     static var totalRating = 0.0
-    var Questions = ["Question1", "Question2", "Question3", "Question4", "Question5"]
+    var Questions = ["How happy were you with the gym? ", "how do you rate the equipments?", "how would you rate the staff?", "how do you rate the cleanliness?", "How Likely Are You to Recommend Us?"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -40,6 +40,8 @@ class GymViewController: UIViewController,UITableViewDelegate, UITableViewDataSo
                 
            
               }
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         return cell
     }
     

@@ -33,6 +33,8 @@ class RegisterViewController: UIViewController {
             var wel = sb.instantiateViewController(withIdentifier: "Login")
             as! ViewController
             present(wel,animated: true, completion:nil)
+            passwordMismatch.text = "Registred Successfuly "
+            passwordMismatch.textColor = UIColor.green
         }else{
             passwordMismatch.text = "Password mismatch "
             passwordMismatch.textColor = UIColor.red

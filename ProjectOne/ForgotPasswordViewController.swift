@@ -7,20 +7,24 @@
 
 import UIKit
 import MessageUI
+import CoreData
 class ForgotPasswordViewController: UIViewController , MFMessageComposeViewControllerDelegate{
-
+   
    
     @IBOutlet weak var enterCode: UITextField!
-    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var email: UITextField!
-    
     @IBOutlet weak var sendPassword: UIButton!
     @IBOutlet weak var enterNewPassword: UITextField!
     @IBOutlet weak var confirmNewPassword: UITextField!
     @IBOutlet weak var ok: UIButton!
     @IBOutlet weak var update: UIButton!
     let random = Int.random(in: 1000..<9999)
+    
+    
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ok.isHidden = true
@@ -29,10 +33,12 @@ class ForgotPasswordViewController: UIViewController , MFMessageComposeViewContr
         confirmNewPassword.isHidden = true
         update.isHidden = true
         // Do any additional setup after loading the view.
+        
+        
+      
     }
     
-  
-    
+   
     @IBAction func sendPassword(_ sender: Any) {
         
         let data = DBHelper.inst.getData()
@@ -105,14 +111,26 @@ class ForgotPasswordViewController: UIViewController , MFMessageComposeViewContr
     
     
     @IBAction func updatePassword(_ sender: Any) {
-        
-        let dic = ["enterNewPassword" : enterNewPassword.text , "confirmNewPassword" : confirmNewPassword.text ]
-        DBHelper.inst.updateData(object: dic as! [String:String])
-        
-                var sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil )
-                var wel = sb.instantiateViewController(withIdentifier: "Login")
-                as! ViewController
-                present(wel,animated: true, completion:nil)
+        let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+        let user = NSEntityDescription.insertNewObject(forEntityName: "User", into: context!) as! User
+        let data = DBHelper.inst.getOneData(email: email.text!)
+        data.password = enterNewPassword.text
+        data.confirmPassword = confirmNewPassword.text
+//            let dic = ["enterNewPassword" : enterNewPassword.text , "confirmNewPassword" : confirmNewPassword.text ]
+//        DBHelper.inst.updateData(object: dic as! [String:String],email:data.email!)
+//
+                    var sb : UIStoryboard = UIStoryboard(name: "Main", bundle: nil )
+                    var wel = sb.instantiateViewController(withIdentifier: "Login")
+                    as! ViewController
+                    present(wel,animated: true, completion:nil)
+      
+        do{
+            try context?.save()
+            print("data updated")
+        }
+        catch{
+            print("data not updated")
+        }
     }
     
 }

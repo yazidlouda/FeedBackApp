@@ -11,7 +11,7 @@ import CoreData
 class OverallViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
    
     static var totalRating = 0.0
-    var Questions = ["Question1", "Question2", "Question3", "Question4", "Question5"]
+    var Questions = ["How friendly were the resort staff members?", "How do you rate the music?", "how do you rate the night animations?", "How likely is it that you would come back?", "How likely are you to recommend our resort to others?"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -43,6 +43,8 @@ class OverallViewController: UIViewController,UITableViewDelegate, UITableViewDa
                 
            
               }
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
         return cell
     }
     
